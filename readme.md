@@ -34,7 +34,7 @@ B --> E[step02.html]
 B --> F[step02.js]
 ```
 
-Here I'm actully creating a `link` element in `step02.js` file, attaching the `style.css` to it and adding it into the `step02.html` file.
+Here I'm actually creating a `link` element in `step02.js` file, attaching the `style.css` to it and adding it into the `step02.html` file.
 
 ## File 03
 
@@ -65,7 +65,7 @@ B --> E[step04.css]
 B --> F[step04.html]
 B --> G[step04.js]
 ```
-In this exampl, the `style.css` isn't use 'cause it's completely different markUp.
+In this example, the `style.css` isn't use 'cause it's completely different markUp.
 
 There're some `css-variable`s defined in `step04.css`. There's a `cssData` object  in `step04.js` which is an imaginary presentation of fetched `css-variable`s from `step04.css`.
 
@@ -83,4 +83,4 @@ B --> F[step05.html]
 B --> G[step05.js]
 ```
 
-The implementation of the formet file was a little complicated. There's better solution for Implementing the `reColor()` function, which is using `setProperty` on the `root` element.
+The implementation of the former file was a little complicated. There's better solution for Implementing the `reColor()` function, which is using `setProperty` on the `root` element.
