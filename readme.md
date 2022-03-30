@@ -1,9 +1,9 @@
-# Binding `*.css` file to a `.html` file
+# Reading and manipulating css custom variables with JS
 
 This is a practice project, The goal is: 
 
-> binding a `.css` file contains some `css-variable`s to a `.html` file
-> using Javascript.
+> reading some custom `css-variable`s from a `*.css` file, adding it into a `.html` file
+> , and make it interactively changeable
 
 *<small>_for more information on `` read these two articles: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) | [CSS-Tricks](https://css-tricks.com/a-complete-guide-to-custom-properties/)</small>*
 
