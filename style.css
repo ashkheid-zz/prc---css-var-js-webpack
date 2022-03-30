@@ -1,0 +1,132 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  /* colors */
+  --clr-grey900: #212121;
+  --clr-grey700: #455A64;
+  --clr-grey50: #ECEFF1;
+
+  --clr-teal900: #004d40;
+  --clr-teal800: #00695c;
+  --clr-teal700: #00796b;
+  --clr-teal600: #00897b;
+  --clr-teal500: #009688;
+  --clr-teal400: #26a69a;
+  --clr-teal300: #4db6ac;
+  --clr-teal200: #80cbc4;
+  --clr-teal100: #b2dfdb;
+  --clr-teal50: #e0f2f1;
+
+  --clr-blue900: #0d47a1;
+  --clr-blue800: #1565c0;
+  --clr-blue700: #1976d2;
+  --clr-blue600: #1e88e5;
+  --clr-blue500: #2196f3;
+  --clr-blue400: #42a5f5;
+  --clr-blue300: #64b5f6;
+  --clr-blue200: #90caf9;
+  --clr-blue100: #bbdefb;
+  --clr-blue50: #e3f2fd;
+
+  --clr-red900: #b71c1c;
+  --clr-red800: #c62828;
+  --clr-red700: #d32f2f;
+  --clr-red600: #e53935;
+  --clr-red500: #f44336;
+  --clr-red400: #ef5350;
+  --clr-red300: #e57373;
+  --clr-red200: #ef9a9a;
+  --clr-red100: #ffcdd2;
+  --clr-red50: #ffebee;
+
+  /* font-sizes */
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+
+  /* padding start */
+  --ps-1: 0.25em;
+  --ps-2: 1em;
+  --ps-3: 3em;
+
+  /* font-families */
+  --ff-serif: serif;
+  --ff-sans: sans-serif;
+
+  /* theme */
+  --h1-clr: var(--clr-red800);
+  --h1-fs: var(--fs-900);
+  --h1-ps: 0;
+  
+  --h2-clr: var(--clr-blue700);
+  --h2-fs: var(--fs-700);
+  --h2-ps: var(--ps-1);
+  
+  --h3-clr: var(--clr-teal600);
+  --h3-fs: var(--fs-500);
+  --h3-ps: var(--ps-2);
+  
+  --p-clr: var(--clr-grey900);
+  --p-fs: var(--fs-300);
+  --p-ps: var(--ps-3);
+}
+
+/* ------------------- */
+/*   Layout Elements   */
+/* ------------------- */
+
+h1 {
+  color: var(--h1-clr);
+  font-size: var(--h1-fs);
+  font-family: var(--ff-serif);
+  padding-inline-start: var(--h1-ps);
+}
+
+
+h2 {
+  color: var(--h2-clr);
+  font-size: var(--h2-fs);
+  font-family: var(--ff-serif);
+  padding-inline-start: var(--h2-ps);
+}
+
+h3 {
+  color: var(--h3-clr);
+  font-size: var(--h3-fs);
+  font-family: var(--ff-serif);
+  padding-inline-start: var(--h3-ps);
+}
+
+p {
+  color: var(--p-clr);
+  font-size: var(--p-fs);
+  font-family: var(--ff-sans);
+  padding-inline-start: var(--p-ps);
+}
+
+.nav {
+  background-color: var(--clr-grey50);
+  width: max-content;
+  padding: 1em 2em;
+  border-radius: 0.2em;
+}
+
+.nav > a {
+  text-decoration: unset;
+  color: initial;
+  font-family: sans-serif;
+  padding: 0.5em 1em;
+  border-radius: 0.2em;
+}
+
+.nav > a:hover {
+  background-color: var(--clr-grey700);
+  color: white;
+}
