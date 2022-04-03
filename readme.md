@@ -84,3 +84,6 @@ B --> G[step05.js]
 ```
 
 The implementation of the former file was a little complicated. There's better solution for Implementing the `reColor()` function, which is using `setProperty` on the `root` element.
+
+## File 06
+Solving the problem using CSS Object Model
