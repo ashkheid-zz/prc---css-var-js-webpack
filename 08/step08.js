@@ -1,5 +1,5 @@
-console.log('Step 07');
-console.info('Logging specified CSS variables to the console 👇🏻');
+console.log('Step 08');
+console.info('Logging specified CSS variables to the console as an object (object literal)👇🏻');
 
 const cssData = {
   '--clr-500': '#607d8b',
