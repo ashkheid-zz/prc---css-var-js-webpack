@@ -9,14 +9,6 @@ const cssData = {
   '--clr-100': '#cfd8dc',
 };
 
-const redPallet = {
-  '--clr-500': '#f44336',
-  '--clr-400': '#ef5350',
-  '--clr-300': '#e57373',
-  '--clr-200': '#ef9a9a',
-  '--clr-100': '#ffcdd2',
-};
-
 const preDefinedPallet = {
   red: {
     '--clr-500': '#f44336',

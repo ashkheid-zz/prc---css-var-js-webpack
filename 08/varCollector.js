@@ -28,14 +28,27 @@ function getCSSCustomProp(selector = null) {
   const cssRulesArray = cssRules.map((cssRule) => [
     cssRule.selectorText,
     [cssRule.style.cssText]
-      .map(text => text.match(/--\S+: ?\S+;/gi)) /* Selecting "CSS custom variable declaration"*/
+      .map((text) =>
+        text.match(/--\S+: ?\S+;/gi)
+      ) /* Selecting "CSS custom variable declaration"*/
       .flat()
-      .map(text => text.replace(/"|'| |;|\\/gi, '')) /* Trimming */
-      .map(raw => raw.split(':'))
+      .map((text) => text.replace(/"|'| |;|\\/gi, '')) /* Trimming */
+      .map((raw) => raw.split(':')),
   ]);
 
   // Creating object literal out of "cssRulesArray"
   const cssRulesObj = arrayToObject(cssRulesArray);
+
+  //! 👇🏻 IMPORTANT BUG FIXED 👇🏻 //
+  // 
+  Object.keys(cssRulesObj).forEach((key) => {
+    for (const item in cssRulesObj[key]) {
+      cssRulesObj[key][item] = getComputedStyle(
+        document.querySelector(key)
+      ).getPropertyValue(item).trim();
+    }
+  });
+  //! 👆🏻 IMPORTANT BUG FIXED 👆🏻 //
 
   return cssRulesObj;
 }
