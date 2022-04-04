@@ -92,3 +92,21 @@
 .point {
   cursor: pointer;
 }
+
+.getCSSFile {
+  color: white;
+  background-color: var(--clr-400);
+  text-decoration: unset;
+  font-family: sans-serif;
+  font-size: 13px;
+  padding: 2px 13px;
+  border-radius: 3px;
+}
+
+.getCSSFile:hover {
+  background-color: var(--clr-500);
+}
+
+.hidden {
+  display: none;
+}
