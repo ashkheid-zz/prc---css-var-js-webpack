@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with CSS Variables - Step 01</title>
+    <script src="./step08.js" defer></script>
+    <script src="./varCollector.js" defer></script>
+    <link rel="stylesheet" href="./step08.css">
+  </head>
+
+  <body>
+    <h1>Working with CSS Variables</h1>
+    <div class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../07/step07.html">Previous Step</a>
+    </div>
+    <hr />
+    <h1 class="pallet-header">This is a <span class="color-name">Grey</span> color pallet</h1>
+    <div class="color-pallet">
+      <ul class="boxes">
+        <li class="sq-100 box-5"></li>
+        <li class="sq-100 box-2"></li>
+        <li class="sq-100 box-4"></li>
+        <li class="sq-100 box-1"></li>
+        <li class="sq-100 box-3"></li>
+      </ul>
+    </div>
+    <p class="change-theme">You can change it to: 
+      <span class="cr-20 theme-red point"></span>
+      <span class="cr-20 theme-teal point"></span>
+      <span class="cr-20 theme-blue point"></span>
+    </p>
+    <hr />
+    <form class="the-form">
+      <fieldset>
+        <legend>Please select your preferred log method:</legend>
+        <div>
+          <input type="radio" id="allVariables"
+           name="logConfig" value="all" checked>
+          <label for="allVariables">All</label>
+    
+          <input type="radio" id="customVariable"
+           name="logConfig" value="phone">
+          <label for="customVariable" id="oneVariable">Custom:</label>
+          <input type="text" for="oneVariable" disabled>
+        </div>
+        <div>
+          <button type="submit" class="var-logger">Log to the console</button>
+        </div>
+      </fieldset>
+    </form>
+    <small><i>Open the <code>console</code> to see the result ...</i></small>
+  </body>
+
+</html>
