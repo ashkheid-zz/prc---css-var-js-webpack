@@ -1,5 +1,5 @@
-console.log('Step 05');
-console.info('Manipulating css file from JavaScript 👇🏻');
+console.log('Step 07');
+console.info('Logging specified CSS variables to the console 👇🏻');
 
 const cssData = {
   '--clr-500': '#607d8b',
@@ -8,8 +8,6 @@ const cssData = {
   '--clr-200': '#b0bec5',
   '--clr-100': '#cfd8dc',
 };
-
-console.info(cssData);
 
 const redPallet = {
   '--clr-500': '#f44336',
@@ -44,7 +42,7 @@ const preDefinedPallet = {
 };
 
 const th = document.querySelector('.change-theme');
-const root = document.querySelector(':root');
+const root = document.documentElement; //Better way to select the root element
 
 function switchThemeHandler(e) {
   const thColor = /(?<=theme-)\w+/gi;
@@ -68,7 +66,6 @@ function switchThemeHandler(e) {
       );
       break;
   }
-  console.info(cssData);
 }
 
 function reColor(color) {

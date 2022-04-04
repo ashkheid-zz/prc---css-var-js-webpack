@@ -66,10 +66,11 @@ function switchThemeHandler(e) {
 
 function reColor(cssSelector, cssFileName, color) {
   // looks up the given <cssSelector> through <cssFileName> file
-  // and IF the file exist, manipulation would happen 
+  // and IF the file exist, manipulation would happen
   Object.values(document.styleSheets).forEach((styleSheet) => {
     styleSheet.href?.includes(cssFileName) &&
       Object.values(styleSheet.cssRules).forEach((ruleBlock) => {
+        console.dir(ruleBlock);
         if (ruleBlock.selectorText.includes(cssSelector)) {
           //Changing color palette
           let props = ruleBlock.cssText.match(/--clr-\d+/gi);
