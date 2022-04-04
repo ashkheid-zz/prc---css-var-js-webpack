@@ -86,4 +86,45 @@ B --> G[step05.js]
 The implementation of the former file was a little complicated. There's better solution for Implementing the `reColor()` function, which is using `setProperty` on the `root` element.
 
 ## File 06
+ 
+```mermaid
+graph LR
+A((root)) --> B(06)
+A --> C[index.html]
+A --> D[style.css]
+B --> E[step06.css]
+B --> F[step06.html]
+B --> G[step06.js]
+```
+
 Solving the problem using CSS Object Model
+
+## File 07 
+
+```mermaid
+graph LR
+A((root)) --> B(07)
+A --> C[index.html]
+A --> D[style.css]
+B --> E[step07.css]
+B --> F[step07.html]
+B --> G[step07.js]
+B --> H[varCollector.js]
+```
+
+Solving the problem using array methods and CSSOM
+
+## File 08
+
+```mermaid
+graph LR
+A((root)) --> B(08)
+A --> C[index.html]
+A --> D[style.css]
+B --> E[step08.css]
+B --> F[step08.html]
+B --> G[step08.js]
+B --> H[varCollector.js]
+```
+
+Improving the functionality
